@@ -33,21 +33,23 @@
           </div>
           <div class="modal-body">
             <p>A browser housed tape delay feedback system, written in JavaScript and utilizing the Web Audio API, Web
-              MIDI API, and NexusUI.</p>
+              MIDI API, and NexusUI. <b>It is suggested to use Firefox or Chrome!</b></p>
             <p>The delay system is a digital replica of one constructed by Pauline Oliveros, with the left channel cross
               coupling back on itself, and the right channel feeding back to the left, with an <b>eight second
                 delay</b>. The model is outlined in more detail in the article below:</p>
             <p><a href="https://www.scribd.com/document/256462168/Oliveros-Pauline-Tape-Delay-Techniques"
                 target="_blank">Tape Delay Techniques for Electronic Music Composers</a></p><br>
             <h4>Instructions for use:</h4>
-            <h5>You have two choices of sound source:</h5>
+            <h5>You have two choices of sound source.:</h5>
             <p>- The first being the built-in Waveform Generator, which holds a set of four oscillators, one side being
               Amplitude Modulation synthesis, the other side Frequency Modulation synthesis. There is also an available
               white noise source with a filtering effect that is routed to the same amplifier as the FM side of the
               oscillator.
               <p>- The second being the user's own input, be it the hardware microphone, an audio/instrument interface,
                 etc. The browser works automatically with your computer's global audio settings, any changes to audio
-                I/O are all made in said settings.
+                I/O are all made in said settings. <b>The user must press either the noise source or AM/FM switch to activate
+                  the user input.
+                </b>
                 These two inputs can be used in tandem.</p>
               <p>- The Tape Delay Feedback control sliders allow you to control the amplitude of each respective
                 feedback element at play in the system (these mimic the line amplifiers used by Pauline in the original
@@ -71,7 +73,7 @@
               <p>- To use the audio recorder, simply push the REC button to start recording, when finished push STOP.
                 You can then hit play and listen to your recording, this allows the file to buffer and render. Once that
                 is finished, a download icon will appear on the audio player, and you may download an .ogg file of your
-                recording.</p>
+                recording. <b>This buffer takes some time to load your file to download once you stop recording! Be patient!</b></p>
               <p>- Lastly, it is suggested to let the system be itself. Experimentation is key, but sometimes stepping
                 away and letting things unfold is when magic can happen. Remember, in feedback systems, not every action
                 has an effect, and even the slightest action can have massive impacts.
@@ -358,14 +360,14 @@
       
     <!-- Audio Recorder -->
     <div class="audio-controls">
-      <p class="mod-title">Audio Recorder</p>
+      <p class="mod-title">Audio Recorder (download will take some time to appear)</p>
       <div class="row">
         <div class="col-4"></div>
         <audio controls></audio>
         <div class="col" id="controls">
           <button id="record-button">REC</button>
           <button id="stop-button">STOP</button>
-        </div>
+        </div>      
       </div>
     </div>
    
